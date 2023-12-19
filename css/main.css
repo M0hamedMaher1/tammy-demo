@@ -1,0 +1,910 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+.nav {
+    width: 100%;
+    margin: -100px 0 0;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.856);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1111;
+    transition: all 0.8s ease-in-out;
+}
+
+.container {
+    width: 89%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 250px;
+}
+
+
+.content ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.content ul li a {
+    display: inline-block;
+    padding: 20px 10px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.info {
+    background-color: rgb(221, 218, 218);
+}
+
+.row-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    width: 85%;
+    margin: auto;
+}
+
+.left {
+    font-size: 12px;
+    color: black;
+}
+
+.right a {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    font-weight: 300;
+}
+
+.middle {
+    padding: 30px 0;
+}
+
+.row5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input {
+    width: 40%;
+    position: relative;
+}
+
+.input input {
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+    border: 2px solid rgb(231, 224, 224);
+    outline: none;
+}
+
+.input i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12%;
+    background-color: rgb(33, 196, 33);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.input i:hover {
+    background-color: darkgreen;
+}
+
+.middle-end .up h3 {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.middle-end .up h3 i {
+    padding: 5px;
+    border-radius: 2px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.track {
+    width: 50%;
+    text-align: start;
+    position: relative;
+}
+
+.track::after {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 50%;
+    transform: translateY(-50%);
+}
+
+.track i {
+    font-size: 12px;
+    cursor: pointer;
+    color: rgb(22, 22, 22);
+    transition: all 0.4s ease-in-out;
+}
+
+.track i:hover {
+    color: green;
+}
+
+.track i::after {
+    content: "Track Your Order";
+    color: black;
+    font-size: 8px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: all 0.4s ease-in-out;
+}
+
+.track i:hover::after {
+    color: green;
+}
+
+.sign {
+    width: 47%;
+    text-align: start;
+    position: relative;
+}
+
+.sign i {
+    font-size: 12px;
+    cursor: pointer;
+    color: rgb(22, 22, 22);
+    transition: all 0.4s ease-in-out;
+}
+
+.sign i:hover {
+    color: green;
+}
+
+.sign i::after {
+    content: "sign In Or Register";
+    color: black;
+    font-size: 6px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: all 0.4s ease-in-out;
+}
+
+.sign i:hover::after {
+    color: green;
+}
+
+.all {
+    padding: 10px 40px 10px 10px;
+    background-color: rgb(68, 68, 255);
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.start ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.start ul li a {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.bars {
+    display: none;
+}
+
+.end {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.end a{
+    color: white;
+    font-size: 28px;
+    position: relative;
+    cursor: pointer;
+}
+
+.end a i span {
+    position: absolute;
+    top: 50%;
+    right: -55%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    background-color: yellow;
+    color: black;
+    font-weight: 600;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.cart h4 {
+    font-size: 14px;
+    color: white;
+}
+
+
+.pics {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../imgs/dog1.webp);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    animation-name: pics;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pics {
+    25% {
+        background-image: url(../imgs/dog1.webp);
+    }
+
+    50% {
+        background-image: url(../imgs/dog2.webp);
+    }
+
+    75% {
+        background-image: url(../imgs/dog2.webp);
+    }
+
+    100% {
+        background-image: url(../imgs/dog1.webp);
+    }
+}
+
+.cont {
+    width: 30%;
+}
+
+.cont h1 {
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.cont p {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 25px 0;
+}
+
+.cont button {
+    padding: 8px 25px;
+    border: 2px solid rgb(68, 68, 255);
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(68, 68, 255);
+    text-transform: capitalize;
+    transition: all 0.1s ease-in-out;
+}
+
+.cont button:hover {
+    background-color: rgb(68, 68, 255);
+    color: white;
+}
+
+.row3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid rgb(221, 218, 218);
+}
+
+.row8 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards {
+    padding: 50px 0;
+
+}
+
+.card {
+    width: 25%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.card:not(:last-child) {
+    border-right: 1px solid rgb(221, 218, 218);
+}
+
+.icon {
+    font-size: 26px;
+    color: rgb(68, 68, 255);
+}
+
+.words h5 {
+    font-size: 16px;
+}
+
+.words p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.products {
+    padding: 20px 0;
+}
+
+.products-left,
+.products-right {
+    width: 48%;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide h3 {
+    width: 50%;
+    font-size: 23px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.products-left h3::before {
+    content: '';
+    background-color: rgb(68, 68, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 25%;
+}
+
+.iconat {
+    display: flex;
+    gap: 10px;
+}
+
+.icon1 {
+    font-size: 16px;
+    cursor: pointer;
+    color: gray;
+}
+
+.flex {
+    display: flex;
+    gap: 1px;
+    flex-wrap: wrap;
+}
+
+.card1 {
+    width: calc((100% - 2px) / 3);
+    position: relative;
+    border: 1px solid rgb(221, 218, 218);
+    cursor: pointer;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.switch {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    transform: translateY(calc(-100% + -10px));
+    transition: all 0.4s ease-in-out;
+}
+
+.card1:hover .switch {
+    transform: translateY(0)
+}
+
+.icon2 {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card1 span {
+    font-size: 13px;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 3px;
+    background-color: rgb(52, 136, 52);
+    text-transform: capitalize;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.image img {
+    width: 100%;
+    display: block;
+}
+
+.card-body {
+    padding: 10px 10px 40px;
+}
+
+.card-body h4 {
+    font-size: 14px;
+    color: rgb(80, 80, 80);
+}
+
+.text {
+    display: flex;
+    gap: 5px;
+    padding: 5px 0;
+}
+
+.text p:not(:last-child) {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.red {
+    font-size: 13px;
+    font-weight: 500;
+    color: red;
+}
+
+.button {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    transition: all 0.4s ease-in-out;
+}
+
+.card1:hover .button {
+    bottom: 20px;
+}
+
+.button button {
+    padding: 7px 30px;
+    font-size: 14px;
+    color: black;
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.button button:hover {
+    background-color: blanchedalmond;
+}
+
+.products-right h3 {
+    width: 50%;
+    font-size: 23px;
+    padding: 10px 0;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.products-right h3::before {
+    content: '';
+    background-color: rgb(68, 68, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 25%;
+}
+
+.tog {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card2 {
+    width: 100%;
+    border: 1px solid rgb(221, 218, 218);
+    position: relative;
+    padding: 20px 0 40px;
+}
+
+.card2 span {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 16px;
+    padding: 5px 6px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgb(33, 196, 33);
+}
+
+.with {
+    display: flex;
+    gap: 30px;
+}
+
+.right-content {
+    padding-top: 50px;
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.price p:not(:last-child) {
+    font-size: 13px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+    text-align: start;
+}
+
+.star {
+    color: gold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button1 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.button1 button {
+    padding: 7px 60px;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid rgb(221, 218, 218);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.button1 button:hover {
+    background-color: rgb(33, 196, 33);
+    color: white;
+}
+
+.scale {
+    width: 100%;
+    height: 23vh;
+}
+
+.image1 {
+    width: 100%;
+    height: 23vh;
+    overflow: hidden;
+}
+
+.image1 img {
+    width: 100%;
+    height: 23vh;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.image1 img:hover {
+    transform: scale(1.1);
+}
+
+.last {
+    background-color: #1a1f2b;
+    padding: 60px 0 0 0;
+    margin-top: 30px
+}
+
+.siblings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one {
+    width: 25%;
+    color: white;
+}
+
+.one p {
+    padding: 30px 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(107, 104, 104);
+}
+
+.one h5 {
+    padding-bottom: 30px;
+}
+
+.some-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.first {
+    font-size: 25px;
+    color: rgb(192, 188, 188);
+    cursor: pointer;
+}
+
+.two {
+    width: 13%;
+    color: white;
+}
+
+.two ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.two ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(107, 104, 104);
+    transition: all 0.4s ease-in-out;
+}
+
+.two ul li a:hover {
+    color: rgb(33, 196, 33);
+}
+
+.last-one {
+    color: white;
+    width: 30%;
+}
+
+.last-one p {
+    padding: 30px 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(107, 104, 104);
+}
+
+.input1 {
+    width: 100%;
+    position: relative;
+}
+
+.input1 input {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: rgb(31, 30, 30);
+    border: 1px solid rgb(107, 104, 104);
+    color: white;
+    outline: none;
+}
+
+.email {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.email:hover {
+    color: rgb(33, 196, 33);
+}
+
+.middle-last {
+    background-color: #1a1f2b;
+    padding: 50px 0;
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bye {
+    font-size: 11px;
+    color: rgb(107, 104, 104);
+    font-weight: 200;
+}
+
+.pay {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pay .image2 {
+    width: 300px;
+}
+
+.pay .image2 img {
+    width: 100%;
+}
+
+.container1 {
+    width: 89%;
+    margin: 0 auto;
+    border-top: 1px solid gray;
+    padding-top: 50px;
+}
+
+.the-end {
+    padding: 20px 0;
+    width: 100%;
+    background-color: #10151f;
+    text-align: center;
+}
+
+.the-end h3 {
+    color: rgb(192, 188, 188);
+    font-size: 14px;
+}
+
+.the-end h3 span {
+    color: rgb(33, 196, 33);
+    cursor: pointer;
+}
+
+.the-end h3 span:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .row5 {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .start {
+        display: none;
+    }
+
+    .bars {
+        display: inline-block;
+        font-size: 22px;
+        width: 50px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        border: 1px solid white;
+    }
+
+    .cont {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        border: 1px solid rgb(221, 218, 218);
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .products-left,
+    .products-right {
+        width: 100%;
+    }
+
+    .card1 {
+        width: 100%;
+    }
+
+    .card2 .button1 button {
+        padding: 7px 30px;
+    }
+
+    .scale{
+        height: 10vh;
+    }
+
+    .image1{
+        height: 10vh;
+    }
+
+    .image1 img{
+        height: 10vh;
+    }
+    .siblings{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .one, .two, .last-one{
+        width: 100%;
+    }
+}
